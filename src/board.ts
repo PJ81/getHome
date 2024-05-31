@@ -151,9 +151,10 @@ export default class Board {
         const mx = T_CNT - 1;
         let maxSearch = 0;
         let pt = new Point(0, T_CNT - 1);
+
         while (true) {
           pt = choose(this.legalMoves);
-          if (pt.x !== 0 && pt.y !== mx && (mx - pt.y === pt.x))
+          if (pt.x !== 0 && pt.y !== mx && (mx - pt.y !== pt.x))
             break;
           if (++maxSearch > 500) break;
         }
