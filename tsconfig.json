@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "outDir": "dist",
+    "lib": ["dom", "es2017"],
+    "removeComments": true,
+    "moduleResolution": "classic"
+  }
+}
